@@ -11,7 +11,7 @@ public interface IMarkStrategy {
 
         @Override
         public String toString() {
-            switch (this){
+            switch (this) {
                 case MARK_2_0:
                     return "2.0";
                 case MARK_3_0:
@@ -27,7 +27,9 @@ public interface IMarkStrategy {
             }
             return "Should not get there";
         }
-    };
+    }
+
+    ;
 
     public Mark calculateMark(int percent);
 }

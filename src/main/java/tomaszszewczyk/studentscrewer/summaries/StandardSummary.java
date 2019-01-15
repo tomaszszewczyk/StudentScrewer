@@ -11,7 +11,7 @@ public class StandardSummary implements ISummary {
 
     @Override
     public void addScore(int scored, int possible) {
-        if(scored > possible)
+        if (scored > possible)
             throw new RuntimeException("Cannot score more points than possible");
 
         scored_points += scored;

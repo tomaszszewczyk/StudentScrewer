@@ -1,7 +1,5 @@
 package tomaszszewczyk.studentscrewer.questions;
 
-import tomaszszewczyk.studentscrewer.summaries.ISummary;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +8,7 @@ public class ClosedQuestion extends OpenQuestion {
 
     @Override
     public void addAnswer(String new_answer) {
-        if(possible_answers.stream().anyMatch(str -> str.equalsIgnoreCase(new_answer.trim())))
+        if (possible_answers.stream().anyMatch(str -> str.equalsIgnoreCase(new_answer.trim())))
             super.addAnswer(new_answer);
     }
 
@@ -23,7 +21,7 @@ public class ClosedQuestion extends OpenQuestion {
         String result = getOneLiner();
         char count = 'a';
 
-        for(String option : possible_answers) {
+        for (String option : possible_answers) {
             result = String.format("%s\n\t%c. %s", result, count, option);
             count++;
         }

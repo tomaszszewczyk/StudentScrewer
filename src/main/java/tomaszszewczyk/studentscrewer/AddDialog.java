@@ -100,23 +100,23 @@ public class AddDialog extends JDialog {
     public String[] getOptions() {
         List<String> list = new ArrayList<>();
 
-        if(getOptionA().length() != 0)
+        if (getOptionA().length() != 0)
             list.add(getOptionA());
-        if(getOptionB().length() != 0)
+        if (getOptionB().length() != 0)
             list.add(getOptionB());
-        if(getOptionC().length() != 0)
+        if (getOptionC().length() != 0)
             list.add(getOptionC());
-        if(getOptionD().length() != 0)
+        if (getOptionD().length() != 0)
             list.add(getOptionD());
 
         return list.toArray(new String[0]);
     }
 
     public boolean isOptionsEmpty() {
-        return getOptionA().length() == 0  &&
-               getOptionB().length() == 0  &&
-               getOptionC().length() == 0  &&
-               getOptionD().length() == 0;
+        return getOptionA().length() == 0 &&
+                getOptionB().length() == 0 &&
+                getOptionC().length() == 0 &&
+                getOptionD().length() == 0;
     }
 
     public void display() {

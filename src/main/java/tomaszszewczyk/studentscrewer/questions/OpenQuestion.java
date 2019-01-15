@@ -24,7 +24,7 @@ public class OpenQuestion implements IQuestion {
 
     @Override
     public void checkAnswer(String new_answer, ISummary summary) {
-        if(answer.compareToIgnoreCase(new_answer.trim()) == 0)
+        if (answer.compareToIgnoreCase(new_answer.trim()) == 0)
             summary.addScore(points_to_score, points_to_score);
         else
             summary.addScore(0, points_to_score);
@@ -32,7 +32,7 @@ public class OpenQuestion implements IQuestion {
 
     @Override
     public String getOneLiner() {
-        return String.format("[%d pkt] %s" , points_to_score, content);
+        return String.format("[%d pkt] %s", points_to_score, content);
     }
 
     @Override
